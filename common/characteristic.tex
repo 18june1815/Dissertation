@@ -1,5 +1,5 @@
-
 {\actuality} Кварк-глюонная плазма (КГП) - это состояние вещества, которое существует при чрезвычайно высокой температуре ($>175$ МэВ) и плотности ($\sim 10$ Фм/$c$).  КГП состоит из асимптотически свободных сильно взаимодействующих кварков и глюонов, которые обычно находятся внутри атомных ядер или других адронов. Считается, что первые несколько микросекунд после Большого Взрыва вселенная находилась в состоянии КГП. Согласно квантовой хромодинамике, КГП может образовываться также и в столкновениях релятивистских тяжелых ионов. По мере расширения, КГП остывает и при достижении критической температуры происходит процесс адронизации - фазовый переход в нейтральную по цвету адронную материю.
+\autocite{physica2020}
 
 Одной из моделей адронизации является модель рекомбинации, согласно которой адроны образуются в результате объединения кварков, которые находятся рядом в фазовом пространстве. Поскольку связанные адронные состояния являются непертурбативными в рамках квантовой хромодинамики, описание процесса адронизации является чрезвычайно сложной задачей. В связи с этим особую важность приобретает анализ экспериментальных данных.
 
@@ -55,8 +55,6 @@
 {\defpositions}
 \begin{enumerate}[beginpenalty=10000] % https://tex.stackexchange.com/a/476052/104425
 	\item 	Инвариантные спектры рождения по поперечному импульсу идентифицируемых заряженных адронов в столкновениях  p+Al,\heau, Cu+Au при энергии \sqsn =200 ГэВ и в столкновениях U+U при энергии \sqsn=193 ГэВ. \autocite{Gosele1999161,Lermontov}
-	\autocite{scbib1}
-	\cite{scbib1}
 	\item 	факторы ядерной модификации для \pipm, \Kpm, \prot, \aprot в столкновениях  p+Al, \heau, Cu+Au при \sqsn=200 ГэВ и в столкновениях U+U при \sqsn=193 ГэВ
 		\begin{enumerate} 
 			\item 	Значения факторов ядерной модификации, измеренные для одного типа частиц в различных системах столкновений при одинаковых значениях \Npart, совпадают в пределах погрешностей.
@@ -89,7 +87,7 @@
 {\contribution} Автор внес определяющий вклад в работу по отбору и анализу данных, получению физического результата и оценке систематических неопределенностей измерений.
 
 \ifnumequal{\value{bibliosel}}{0}
-{%%% Встроенная реализация с загрузкой файла через движок bibtex8. (При желании, внутри можно использовать обычные ссылки, наподобие `\cite{vakbib1,vakbib2}`).
+{%%% Встроенная реализация с загрузкой файла через движок bibtex8. (При желании, внутри можно использовать обычные ссылки, наподобие ``).
     {\publications} Основные результаты по теме диссертации изложены
     в~XX~печатных изданиях,
     X из которых изданы в журналах, рекомендованных ВАК,
@@ -105,7 +103,7 @@
         %  * при использовании `\insertbiblioauthorgrouped`, порядок команд `\printbibliography` в нём должен быть тем же (см. biblio/biblatex.tex)
         %
         % Невидимый библиографический список для подсчёта количества публикаций:
-        \printbibliography[heading=nobibheading, section=1, env=countauthorvak,          keyword=biblioauthorvak]%
+        \printbibliography[heading=nobibheading, section=1, env=countauthor,          keyword=biblioauthorvak]%
         \printbibliography[heading=nobibheading, section=1, env=countauthorwos,          keyword=biblioauthorwos]%
         \printbibliography[heading=nobibheading, section=1, env=countauthorscopus,       keyword=biblioauthorscopus]%
         \printbibliography[heading=nobibheading, section=1, env=countauthorconf,         keyword=biblioauthorconf]%
@@ -117,7 +115,7 @@
         \printbibliography[heading=nobibheading, section=1, env=countauthorvakscopuswos, filter=vakscopuswos]%
         \printbibliography[heading=nobibheading, section=1, env=countauthorscopuswos,    filter=scopuswos]%
         %
-        \nocite{confbib1}
+        %\nocite{confbib1}
         %
         {\publications} Основные результаты по теме диссертации изложены в~\arabic{citeauthor}~печатных изданиях,
         \arabic{citeauthorvak} из которых изданы в журналах, рекомендованных ВАК\sloppy%
@@ -158,11 +156,7 @@
         % Процитированные здесь работы:
         %  * попадают в авторскую библиографию, при usefootcite==0 и стиле `\insertbiblioauthorimportant`.
         %  * ни на что не влияют в противном случае
-        \nocite{vakbib2}%vak
-        \nocite{patbib1}%patent
-        \nocite{progbib1}%program
-        \nocite{bib1}%other
-        \nocite{confbib1}%conf
+        \nocite{physica2020}%vak
     \end{refsection}%
         %
         % Всё, что вне этих двух refsection, это refsection=0,

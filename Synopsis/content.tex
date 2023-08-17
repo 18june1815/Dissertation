@@ -61,9 +61,7 @@ $$m^2 = \frac{p^2}{c^2} \left(  \frac{t^2 c^2}{L^2} - 1\right)$$
 
 \underline{\textbf{Пятая глава}} основной части посвящена обсуждению полученных результатов. 
 Путем построения и анализа инвариантных спектров заряженных адронов по инвариантной массе, получены значения параметров обратного наклона $T$ инвариантных спектров по $m_T$ заряженных адронов. Зависимости $T(m_h)$ где $h - \pi+, \pi^-, K^+, K^-, p, \bar{p}$ аппроксимированы функцией $T = T_0 + m\left< u_t\right>^2$, основанной на соображениях термодинамики.
-Полученные зависимости приведелны на рис.
-
-
+Полученные зависимости приведелны на рис. \ref{fig:synops_T0ut}.
 
 \begin{figure}[ht]
 	\centerfloat{
@@ -75,10 +73,55 @@ $$m^2 = \frac{p^2}{c^2} \left(  \frac{t^2 c^2}{L^2} - 1\right)$$
 			\includegraphics[width=0.45\linewidth]{Results/ut_Npart.png}}
 		\hfill
 	}
-	\caption{Зависимость а) температуры вымораживания $T_0$ и  б) скорости поперечного потока $u_T$ от количество нуклонов участников \Npart.}\label{fig:latex}
+	\caption{Зависимость а) температуры вымораживания $T_0$ и  б) скорости поперечного потока $u_T$ от количество нуклонов участников \Npart.}\label{fig:synops_T0ut}
 \end{figure}
 
-Было проведено сравнение с моделированием.
+Было проведено сравнение полученных резлультатов с теоретическими моделями, реализованными в программных пакетах PYTHIA и AMPT. 
+
+
+\begin{figure}[] 
+	\centerfloat
+	\includegraphics [width=0.8\linewidth]{Simulation/RAA_AMPT_Pythia.png}
+	\caption{Инвариантные спектры по поперечному массе, измеренные для отрицательно заряженных адронов в различных центральностях p+Al, \heau, Cu+Au и U+U столкновениях.} 
+	\label{img:synops_RAA_sym}
+\end{figure}
+
+\begin{comment}
+\begin{figure}[] 
+	\centerfloat
+	\includegraphics [width=0.6\linewidth]{Simulation/Ratio_same_AMPT_Pythia.png}
+	\caption{Инвариантные спектры по поперечному массе, измеренные для отрицательно заряженных адронов в различных центральностях p+Al, \heau, Cu+Au и U+U столкновениях.} 
+	\label{img:synops_Ratio_same_sym}
+\end{figure}
+\end{comment}
+
+\begin{figure}[] 
+	\centerfloat
+	\includegraphics [width=0.7\linewidth]{Simulation/Ratios_AMPT_large_p2pi.png}
+	\caption{Инвариантные спектры по поперечному массе, измеренные для отрицательно заряженных адронов в различных центральностях p+Al, \heau, Cu+Au и U+U столкновениях.} 
+	\label{img:synops_Ratio_LargeP2PI_sym}
+\end{figure}
+
+\begin{figure}[] 
+	\centerfloat
+	\includegraphics [width=1\linewidth]{Simulation/Ratios_AMPT_small_p2pi.png}
+	\caption{Инвариантные спектры по поперечному массе, измеренные для отрицательно заряженных адронов в различных центральностях p+Al, \heau, Cu+Au и U+U столкновениях.} 
+	\label{img:synops_Ratio_SmallP2PI_sym}
+\end{figure}
+
+\begin{figure}[] 
+	\centerfloat
+	\includegraphics [width=0.7\linewidth]{Simulation/Ratios_AMPT_large_K2pi.png}
+	\caption{Инвариантные спектры по поперечному массе, измеренные для отрицательно заряженных адронов в различных центральностях p+Al, \heau, Cu+Au и U+U столкновениях.} 
+	\label{img:synops_Ratio_LargeK2PI_sym}
+\end{figure}
+
+\begin{figure}[] 
+	\centerfloat
+	\includegraphics [width=0.7\linewidth]{Simulation/Ratios_AMPT_small_K2pi.png}
+	\caption{Инвариантные спектры по поперечному массе, измеренные для отрицательно заряженных адронов в различных центральностях p+Al, \heau, Cu+Au и U+U столкновениях.} 
+	\label{img:synops_Ratio_SmallK2PI_sym}
+\end{figure}
 
 
 \FloatBarrier
@@ -100,33 +143,16 @@ $$m^2 = \frac{p^2}{c^2} \left(  \frac{t^2 c^2}{L^2} - 1\right)$$
     %\insertbiblioexternal   % !!! bibtex не умеет работать с несколькими библиографиями !!!
 }{% Реализация пакетом biblatex через движок biber
     % Цитирования.
-    %  * Порядок перечисления определяет порядок в библиографии (только внутри подраздела, если `\insertbiblioauthorgrouped`).
-    %  * Если не соблюдать порядок "как для \printbibliography", нумерация в `\insertbiblioauthor` будет кривой.
+    %  * Порядок перечисления определяет порядок в библиографии (только внутри подраздела, если \insertbiblioauthorgrouped).
+    %  * Если не соблюдать порядок "как для \printbibliography", нумерация в \insertbiblioauthor будет кривой.
     %  * Если цитировать каждый источник отдельной командой --- найти некоторые ошибки будет проще.
     %
     %% authorvak
-    \nocite{vakbib1}%
-    \nocite{vakbib2}%
-    %
-    %% authorwos
-    \nocite{wosbib1}%
-    %
-    %% authorscopus
-    \nocite{scbib1}%
-    %
-    %% authorpathent
-    \nocite{patbib1}%
-    %
-    %% authorprogram
-    \nocite{progbib1}%
-    %
-    %% authorconf
-    \nocite{confbib1}%
-    \nocite{confbib2}%
-    %
-    %% authorother
-    \nocite{bib1}%
-    \nocite{bib2}%
+   \nocite{physica2020}%vak
+   \nocite{physica2021}%vak
+   \nocite{icppa2020}%vak
+   \nocite{lomcon2021}%vak
+   \nocite{nucleus2020}%vak    
 
     \ifnumgreater{\value{usefootcite}}{0}{
         \begin{refcontext}[labelprefix={}]
